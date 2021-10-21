@@ -23,7 +23,7 @@ namespace Faker.Generators
 
                 for (int i = 0; i < amount; i++)
                 {
-                    list.Add(Faker.Fakers.Faker.DefaultFaker.Create(type.GetGenericArguments()[0]));
+                    list.Add(Fakers.Faker.DefaultFaker.Create(type.GetGenericArguments()[0]));
                 }
 
                 return list;

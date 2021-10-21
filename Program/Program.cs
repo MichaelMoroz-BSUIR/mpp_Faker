@@ -7,24 +7,19 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            try
-            {
-                var faker = new Faker.Fakers.Faker();
-                
+            var faker = new Faker.Fakers.Faker();
 
-                var list = faker.Create<List<List<DateTime>>>();
-                foreach (var values in list)
+            var list = faker.Create<List<List<DateTime>>>();
+            foreach (var values in list)
+            {
+                foreach (var v in values)
                 {
-                    foreach (var fakerValue in values)
-                    {
-                        Console.WriteLine(fakerValue);
-                    }
+                    Console.WriteLine(v);
                 }
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
+
+            int numbers = faker.Create<int>();
+            Console.WriteLine(numbers + " ");
         }
     }
 }

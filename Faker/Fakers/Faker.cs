@@ -8,38 +8,40 @@ namespace Faker.Fakers
 {
     public class Faker
     {
-        private static readonly Faker _faker = new Faker();
-
+        private static readonly Faker _faker = new();
         public static Faker DefaultFaker => _faker;
 
-        private static List<IGenerator> _generators;
+        private readonly IEnumerable<IGenerator> _generators;
 
         public Faker()
         {
             var generatorType = typeof(IGenerator);
-            var impls = AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(a => a.GetTypes())
-                .Where(c => c.IsClass && c.GetInterfaces().Contains(generatorType) && c.IsClass)
-                .Select(c => (IGenerator)Activator.CreateInstance(c));
-            _generators = new List<IGenerator>(impls);
+            _generators = AppDomain.CurrentDomain.GetAssemblies()
+                       .SelectMany(a => a.GetTypes())
+                       .Where(t => t.IsClass && t.GetInterfaces().Contains(generatorType))
+                       .Select(t =>
+                       {
+                           try
+                           {
+                               return (IGenerator)Activator.CreateInstance(t);
+                           }
+                           catch
+                           {
+                               return null;
+                           }
+                       })
+                       .Where(generator => generator != null)
+                       .ToArray();
         }
-
-        private static object GetDefaultValue(Type t)
+        private void InitializeFields(object obj)
         {
-            return t.IsValueType ? Activator.CreateInstance(t) : null;
-        }
-
-        public T Create<T>() => (T)Create(typeof(T));
-
-        private void InitializeFields(object o)
-        {
-            foreach (var field in o.GetType().GetFields())
+            foreach (var field in obj.GetType().GetFields())
             {
                 try
                 {
-                    if (Equals(field.GetValue(o), GetDefaultValue(field.FieldType)))
+                    if (Equals(field.GetValue(obj), GetDefaultValue(field.FieldType)))
                     {
-                        field.SetValue(o, Create(field.FieldType));
+                        field.SetValue(obj, Create(field.FieldType));
                     }
                 }
                 catch
@@ -48,40 +50,43 @@ namespace Faker.Fakers
                 }
             }
         }
-
-        public object Create(Type type)
+        public object Create(Type t)
         {
-            if (CyclicDependency.IsCyclic(type))
+            if (CyclicDependency.IsCyclic(t))
             {
-                throw new Exception($"{type} contains cyclical dependency");
+                throw new Exception($"{t} contains cyclical dependency");
             }
 
             foreach (var generator in _generators)
             {
-                if (generator.CanGenerate(type))
-                {
-                    return generator.Generate(type);
-                }
+                if (generator.CanGenerate(t))
+                    return generator.Generate(t);
             }
-
-            foreach (var constructor in type.GetConstructors())
+            
+            foreach (var constructor in t.GetConstructors())
             {
                 try
                 {
                     var args = constructor.GetParameters()
                         .Select(p => p.ParameterType)
                         .Select(Create);
-                    object o = constructor.Invoke(args.ToArray());
-                    InitializeFields(o);
-                    return o;
+
+                    object obj = constructor.Invoke(args.ToArray());
+                    InitializeFields(obj);
+                    return obj;
                 }
                 catch
                 {
                     //some message
                 }
             }
+            throw new Exception($"Cannot create object of type: {t}");
+        }
+        public T Create<T>() => (T)Create(typeof(T));
 
-            throw new Exception($"Cannot create object of type: {type}");
+        private static object GetDefaultValue(Type t)
+        {
+            return t.IsValueType ? Activator.CreateInstance(t) : null;
         }
     }
 }
