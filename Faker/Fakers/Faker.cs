@@ -31,7 +31,7 @@ namespace Faker.Fakers
 
         public T Create<T>() => (T)Create(typeof(T));
 
-        private static void InitializeFields(object o)
+        private void InitializeFields(object o)
         {
             foreach (var field in o.GetType().GetFields())
             {
@@ -49,7 +49,7 @@ namespace Faker.Fakers
             }
         }
 
-        public static object Create(Type type)
+        public object Create(Type type)
         {
             if (CyclicDependency.IsCyclic(type))
             {

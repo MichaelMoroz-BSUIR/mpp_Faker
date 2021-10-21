@@ -21,10 +21,11 @@ namespace ArrayGenerator
             var size = _random.Next(3, 18);
             var array = (Array)Activator.CreateInstance(type, size);
 
-            for (int i = 0; i < array.Length; i++)
-            {
-                array.SetValue(Faker.Fakers.Faker.Create(type.GetElementType()), i);
-            }
+            if (array != null)
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array.SetValue(Faker.Fakers.Faker.DefaultFaker.Create(type.GetElementType()), i);
+                }
 
             return array;
         }
