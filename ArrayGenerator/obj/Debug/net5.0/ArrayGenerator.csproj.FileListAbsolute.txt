@@ -1,0 +1,15 @@
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\bin\Debug\net5.0\ArrayGenerator.deps.json
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\bin\Debug\net5.0\ArrayGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\bin\Debug\net5.0\ref\ArrayGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\bin\Debug\net5.0\ArrayGenerator.pdb
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\bin\Debug\net5.0\Faker.dll
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\bin\Debug\net5.0\Faker.pdb
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.csproj.AssemblyReference.cache
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.AssemblyInfoInputs.cache
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.AssemblyInfo.cs
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.csproj.CoreCompileInputs.cache
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.csproj.CopyComplete
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ref\ArrayGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\ArrayGenerator\obj\Debug\net5.0\ArrayGenerator.pdb

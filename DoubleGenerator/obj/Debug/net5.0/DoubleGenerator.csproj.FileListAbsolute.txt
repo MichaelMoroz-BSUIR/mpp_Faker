@@ -1,0 +1,15 @@
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\bin\Debug\net5.0\DoubleGenerator.deps.json
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\bin\Debug\net5.0\DoubleGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\bin\Debug\net5.0\ref\DoubleGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\bin\Debug\net5.0\DoubleGenerator.pdb
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\bin\Debug\net5.0\Faker.dll
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\bin\Debug\net5.0\Faker.pdb
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.csproj.AssemblyReference.cache
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.AssemblyInfoInputs.cache
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.AssemblyInfo.cs
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.csproj.CoreCompileInputs.cache
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.csproj.CopyComplete
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\ref\DoubleGenerator.dll
+C:\Users\misha\RiderProjects\mpp_Faker\DoubleGenerator\obj\Debug\net5.0\DoubleGenerator.pdb

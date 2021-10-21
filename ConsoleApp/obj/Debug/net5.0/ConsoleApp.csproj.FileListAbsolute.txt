@@ -1,5 +1,0 @@
-C:\Users\misha\RiderProjects\mpp_Faker\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.AssemblyReference.cache
-C:\Users\misha\RiderProjects\mpp_Faker\ConsoleApp\obj\Debug\net5.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\misha\RiderProjects\mpp_Faker\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfoInputs.cache
-C:\Users\misha\RiderProjects\mpp_Faker\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfo.cs
-C:\Users\misha\RiderProjects\mpp_Faker\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.CoreCompileInputs.cache
