@@ -1,0 +1,12 @@
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.csproj.AssemblyReference.cache
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.AssemblyInfoInputs.cache
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.AssemblyInfo.cs
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.csproj.CoreCompileInputs.cache
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\bin\Debug\net5.0\Faker.deps.json
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\bin\Debug\net5.0\Faker.dll
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\bin\Debug\net5.0\ref\Faker.dll
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\bin\Debug\net5.0\Faker.pdb
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.dll
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\ref\Faker.dll
+C:\Users\misha\RiderProjects\mpp_Faker\Faker\obj\Debug\net5.0\Faker.pdb
